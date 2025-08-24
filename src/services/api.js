@@ -1,7 +1,7 @@
 import React from "react";
 
 // Real API service to fetch connection data from backend with request control
-const API_BASE_URL = 'https://dev.fibralink.net.br/api/v1';
+const API_BASE_URL = 'https://localhost:3000/api/v1';
 
 // Store for ongoing requests and debounced calls
 const requestCache = new Map();
