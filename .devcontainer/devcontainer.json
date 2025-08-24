@@ -1,0 +1,34 @@
+{
+    "name": "PonWatcher DevContainer (Node)",
+    "workspaceFolder": "/workspaces/app",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/app,type=bind",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "forwardPorts": [
+        8080
+    ],
+    "runArgs": [
+        "--network=host"
+    ],
+    "remoteUser": "vscode",
+    "postCreateCommand": "yarn install && git config --global --add safe.directory /workspaces/app",
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "fish",
+                "editor.formatOnSave": true,
+                "eslint.format.enable": true,
+                "editor.defaultFormatter": "esbenp.prettier-vscode"
+            },
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode"
+            ]
+        }
+    }
+}
