@@ -406,8 +406,8 @@ const StatusPage = ({ formData }) => {
     <header className="flex-shrink-0 border border-cyan-800 p-2 sm:p-4 lg:p-6 pb-2 sm:pb-4">
       <div className="flex flex-col gap-2 sm:gap-4">
         <img
-          src="/assets/images/logo-fibralink.svg"
-          alt="Fibralink Logo"
+          src="/assets/images/logo.svg"
+          alt="Logo"
           className="w-40 sm:w-48 md:w-56 lg:w-64 object-contain"
         />
         <hr className="border-1 w-full border-cyan-400" />
